@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { GraduationCap, ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-medical.jpg";
 
 const Hero = () => {
   return (
@@ -12,8 +11,7 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
+        <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-8 animate-fade-in-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20">
               <GraduationCap className="w-4 h-4" />
@@ -28,12 +26,12 @@ const Hero = () => {
               SAVE YOUR RUBBER MONEY, AND STUDY FROM HOME!
             </p>
             
-            <p className="text-xl text-muted-foreground max-w-xl">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Practice with SBA questions, prepare for OSCE exams, and learn from expert video lectures. 
               Everything you need to excel in your medical studies.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
                 className="text-lg px-8 py-6"
@@ -51,7 +49,7 @@ const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="flex gap-8 pt-8">
+            <div className="flex gap-8 pt-8 justify-center">
               <div>
                 <div className="text-3xl font-bold text-primary">500+</div>
                 <div className="text-sm text-muted-foreground">Questions</div>
@@ -64,17 +62,6 @@ const Hero = () => {
                 <div className="text-3xl font-bold text-primary">500+</div>
                 <div className="text-sm text-muted-foreground">Notes</div>
               </div>
-            </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={heroImage} 
-                alt="Medical students studying" 
-                className="w-full h-auto object-cover"
-              />
             </div>
           </div>
         </div>
