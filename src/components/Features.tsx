@@ -51,11 +51,8 @@ const Features = () => {
     <section className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Everything You Need to
-            <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Succeed
-            </span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+            Everything You Need to Succeed
           </h2>
           <p className="text-xl text-muted-foreground">
             Comprehensive tools and resources designed for medical students

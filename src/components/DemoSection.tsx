@@ -48,14 +48,11 @@ const DemoSection = () => {
     <section className="py-24 bg-gradient-to-br from-background via-primary/5 to-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Experience Our Platform
-            <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Try Demo Content
-            </span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+            Try Our Interactive Demo
           </h2>
           <p className="text-xl text-muted-foreground">
-            Explore how our learning tools can help you master medical education
+            Experience how MeduAid helps you master medical concepts
           </p>
         </div>
 
@@ -65,7 +62,6 @@ const DemoSection = () => {
             size="lg"
             variant={activeDemo === "sba" ? "default" : "outline"}
             onClick={() => setActiveDemo("sba")}
-            className={`px-8 ${activeDemo === "sba" ? "bg-primary" : ""}`}
           >
             <FileText className="w-5 h-5 mr-2" />
             SBA Questions
@@ -74,7 +70,6 @@ const DemoSection = () => {
             size="lg"
             variant={activeDemo === "osce" ? "default" : "outline"}
             onClick={() => setActiveDemo("osce")}
-            className={`px-8 ${activeDemo === "osce" ? "bg-secondary" : ""}`}
           >
             <Stethoscope className="w-5 h-5 mr-2" />
             OSCE
@@ -83,7 +78,6 @@ const DemoSection = () => {
             size="lg"
             variant={activeDemo === "video" ? "default" : "outline"}
             onClick={() => setActiveDemo("video")}
-            className={`px-8 ${activeDemo === "video" ? "bg-primary" : ""}`}
           >
             <Video className="w-5 h-5 mr-2" />
             Videos
@@ -124,7 +118,7 @@ const DemoSection = () => {
             <div className="pt-6">
               <Button 
                 size="lg" 
-                className="w-full md:w-auto bg-gradient-to-r from-primary to-secondary hover:opacity-90"
+                className="w-full md:w-auto"
               >
                 Start Practicing Now
               </Button>

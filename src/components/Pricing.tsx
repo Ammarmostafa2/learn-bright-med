@@ -59,14 +59,11 @@ const Pricing = () => {
     <section className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Choose Your
-            <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Learning Plan
-            </span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+            Choose Your Perfect Plan
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Flexible pricing to match your learning goals
+            Flexible pricing options for every medical student
           </p>
 
           {/* Billing Toggle */}
@@ -109,7 +106,7 @@ const Pricing = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {plan.highlighted && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full text-sm font-medium">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">
                   Most Popular
                 </div>
               )}
@@ -144,13 +141,9 @@ const Pricing = () => {
               </ul>
 
               <Button
-                className={`w-full ${
-                  plan.highlighted
-                    ? "bg-gradient-to-r from-primary to-secondary hover:opacity-90"
-                    : ""
-                }`}
                 variant={plan.highlighted ? "default" : "outline"}
                 size="lg"
+                className="w-full"
               >
                 Get Started
               </Button>

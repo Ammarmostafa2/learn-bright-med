@@ -20,22 +20,23 @@ const Hero = () => {
               <span className="text-sm font-medium">Medical Education Platform</span>
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              Master Medical
-              <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Education
-              </span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-foreground">
+              Welcome to MeduAid
             </h1>
             
+            <p className="text-2xl md:text-3xl font-bold text-primary uppercase mb-4">
+              SAVE YOUR RUBBER MONEY, AND STUDY FROM HOME!
+            </p>
+            
             <p className="text-xl text-muted-foreground max-w-xl">
-              Practice with SBA questions, master OSCE examinations, and learn from expert video lectures. 
-              Everything you need to excel in your medical education.
+              Practice with SBA questions, prepare for OSCE exams, and learn from expert video lectures. 
+              Everything you need to excel in your medical studies.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
-                className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity shadow-lg"
+                className="text-lg px-8 py-6"
               >
                 Start Free Trial
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -43,7 +44,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="text-lg px-8 py-6 border-2 hover:bg-primary/5"
+                className="text-lg px-8 py-6 border-2"
               >
                 Watch Demo
               </Button>
@@ -74,20 +75,6 @@ const Hero = () => {
                 alt="Medical students studying" 
                 className="w-full h-auto object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20"></div>
-            </div>
-            
-            {/* Floating card */}
-            <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-xl shadow-xl border animate-float">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <GraduationCap className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <div className="font-semibold">10,000+</div>
-                  <div className="text-sm text-muted-foreground">Active Students</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
